@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeMaster.master.cs" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Ajax -- Posting</title>
+    <!-- Bootstrap core CSS -->
+    <link href="../Content/css/bootstrap.css" rel="stylesheet" />
+    <!-- Add custom CSS here -->
+    <link href="../Content/css/sb-admin.css" rel="stylesheet" />
+    <link href="../Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <!-- Page Specific CSS 
+    <link href="../Content/css/morris-0.4.3.min.css" rel="stylesheet" -->
+</head>
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SB Admin</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right navbar-user">
+                    <li class="dropdown messages-dropdown">
+                        <a href="../View/Default.aspx">HOME</a>
+                    </li>
+                    <li class="dropdown alerts-dropdown">
+                        <a href="#">ABOUT US</a>
+                    </li>
+                     <li class="dropdown user-dropdown">
+                        <a href="#">BLOGS</a>
+                    </li>
+                    <li class="dropdown user-dropdown">
+                        <a href="../View/Index.aspx">CUSTOMERS</a>
+                    </li>
+                    <li class="dropdown user-dropdown">
+                        <a href="#">CONTACT US</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- JavaScript -->
+    <script src="../Content/js/jquery-1.10.2.js"></script>
+    <script src="../Content/js/bootstrap.js"></script>
+    <script src="../Content/js/jquery.dataTables.js"></script>
+    <script src="../Content/datetimepicker/bootstrap-datepicker.js"></script>
+    <!-- Page Specific Plugins -->
+    <script src="../Content/js/tablesorter/jquery.tablesorter.js"></script>
+    <script src="../Content/js/tablesorter/tables.js"></script>
+    <script>
+        $(window).load(function () {
+            $(".datepicker").datepicker();
+        });
+    </script>
+</body>
+</html>
